@@ -1,0 +1,218 @@
+/* 헤더 */
+header {
+  max-width: 1920px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 320px;
+  box-shadow: 0px 4px 5px 0px #0000001a;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 124px;
+  height: 38px;
+  margin-right: 30px;
+}
+
+.header-left form {
+  width: 400px;
+  height: 46px;
+  border: 2px solid #21bf48;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+}
+
+.header-left form input {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 20.03px;
+  border: 0;
+}
+
+.header-left form button {
+  position: relative;
+  border: 3px solid #21bf48;
+  width: 18.67px;
+  height: 18.67px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.header-left form button::after {
+  position: absolute;
+  content: '';
+  border: 3px solid #21bf48;
+  width: 5px;
+  height: 1px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right button {
+  border: 0;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.header-right button:hover {
+  color: #21bf48;
+}
+
+.header-right .btn1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.header-right .btn1 img:hover {
+  content: url(../assets/icon-shopping-cart-2.svg);
+}
+
+.header-right .btn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  margin-left: 26px;
+}
+
+.header-right .btn2 img:hover {
+  content: url(../assets/icon-user-2.svg);
+}
+
+/* 메인 */
+.main-top {
+  width: 1920px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-top .main-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 188px;
+  margin-bottom: 162px;
+  padding: 0 30px;
+}
+
+.main-top .main-btn-wrap button {
+  border: 0;
+  background-color: transparent;
+}
+
+#container {
+  margin: 0 320px;
+  width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 78px;
+}
+
+#container img {
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+}
+
+#container p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #767676;
+}
+
+#container h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#container .price {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 30.05px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* 푸터 */
+footer {
+  max-width: 1920px;
+  height: 298px;
+  padding: 0 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-wrap .link-wrap {
+  display: flex;
+  margin-top: 60px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  font-size: 14px;
+  line-height: 17.53px;
+}
+
+.footer-top-wrap .link-wrap li:nth-child(3) {
+  font-weight: 700;
+}
+
+.footer-top-wrap .link-wrap li::after {
+  content: '|';
+  padding: 0 14px;
+}
+
+.footer-top-wrap .link-wrap li:last-child::after {
+  content: none;
+}
+
+.footer-top-wrap .icon-wrap {
+  display: flex;
+  gap: 14px;
+  margin-top: 54px;
+}
+
+.footer-line {
+  width: 1280px;
+  height: 1px;
+  border: 1px solid #c4c4c4;
+  margin-top: 22px;
+}
+
+.footer-bottom-wrap {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #4f4f4f;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-bottom-wrap span:first-child {
+  font-weight: 700;
+}

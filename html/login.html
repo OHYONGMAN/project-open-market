@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../assets/Logo-hodu.png" alt="호두 로고 이미지" />
+    </header>
+    <main>
+      <section class="login-wrap">
+        <div class="login-select-wrap">
+          <button class="buyer-btn">구매회원 로그인</button>
+          <button class="seller-btn">판매회원 로그인</button>
+        </div>
+
+        <form id="formData">
+          <input type="text" placeholder="아이디" id="id" class="id" name="username" />
+          <input
+            type="password"
+            id="password"
+            placeholder="비밀번호"
+            class="pw"
+            name="password"
+          />
+          <button type="button" id="login-btn" onclick="post()">로그인</button>
+          <input type="hidden" id="login_type" name="login_type" value="BUYER" />
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
